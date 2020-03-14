@@ -25,7 +25,7 @@ NEXTPNR = nextpnr-ice40
 NEXTPNR_ARGS = --pre-pack $(SDC)
 ICEPACK = icepack
 ICETIME = icetime
-ICEPROG = iceprog
+ICEPROG = icesprog
 ICEBRAM = icebram
 CDCPROG = cdc_prog
 VERILATOR = verilator
@@ -63,7 +63,7 @@ recode:
 	$(MAKE) prog
     
 prog: $(PROJ).bin
-	$(CDCPROG) -p /dev/ttyACM0 $<
+	$(ICEPROG)  $<
 
 sudo-prog: $(PROJ).bin
 	@echo 'Executing prog as root!!!'

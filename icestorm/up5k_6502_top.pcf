@@ -16,8 +16,8 @@ set_io gpio_i[5] 26
 set_io gpio_i[6] 25
 set_io gpio_i[7] 23
 
-set_io RX 6
-set_io TX 9
+set_io RX 4
+set_io TX 6
 
 set_io tst_rst 2
 set_io tst_clk 46
